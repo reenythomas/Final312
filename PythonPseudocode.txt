@@ -1,0 +1,61 @@
+Python Pseudocode for Indentifying Nuclei Info in Processed Images
+
+import PIL
+
+#step through BLUE images
+
+Begin if loop (toggle == 1)
+
+#initialize a data frame that will contain information about nuclei
+(
+frame = 'frame'
+size = NA
+intenisty = NA
+x_pos = NA
+y_pos = NA
+)
+
+
+#step through BLUE images
+
+for (i in 1:len(Bimages)) #for loop to iterate through blue images
+
+#load original image, image average, and mask
+B-orig = Image(dir_Braw, Bimages[i], sep="")  #input image data 
+
+#process image average
+ Begin if loop (b_avg_toggle == 1)
+ {
+ +  read in B.avg.png into (Image) function
+ B_orig = B_orig-B_avg
+ 
+ }
+ 
+ # initialize three variables 
+ B_orig 
+ B_mask = Image (dir_Braw, "masl_', Bimages [i], sep="")) 
+ 
+# identify unique nuclei
++ Use (watershed) function and (distmap) function t indeitfy nuclein in basic 
+variable initializing
++ B_label
+
+# step through all nuclei in image 
+
+for loop to iterate through identified nuclei
+
+frame = name of image in original file
+size = input size of nuclei
+c_intensity = average of all intensity values in nuclei
+
+# average x and y position of nuclei
+c_x_pos = mean ( x_ crop values)
+c_y_pos = mean ( y_crop values)
+
+
+ 
+
+
+
+
+
